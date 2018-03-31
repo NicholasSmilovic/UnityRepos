@@ -1,0 +1,9 @@
+Gizmos
+  -mostly used for assiting with visualization.
+
+Getting Camera sides:
+    ` float distanceToCamera = transform.position.z - Camera.main.transform.position.z;
+      Vector3 leftEdge = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, distanceToCamera));
+      Vector3 rightEdge = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, distanceToCamera));
+      xmax = rightBoundary.x;
+  		xmin = leftBoundary.x;`
