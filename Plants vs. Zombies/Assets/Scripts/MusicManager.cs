@@ -16,6 +16,7 @@ public class MusicManager : MonoBehaviour {
 
 	void Start () {
 		audioSource = GetComponent<AudioSource>();
+		ChangeVolume(PlayerPrefsManager.GetMasterVolume());
 	}
 
 	void OnLevelWasLoaded (int level) {
@@ -23,9 +24,15 @@ public class MusicManager : MonoBehaviour {
 		Debug.Log("Playing Clip: " +  thisLevelMusic);
 
 		if(thisLevelMusic) {//if some music attached to gameObject
-			audioSource.clip = thisLevelMusic;
-			audioSource.loop = true;
-			audioSource.Play();
+			if(audioSource.clip != thisLevelMusic) {
+				audioSource.clip = thisLevelMusic;
+				audioSource.loop = true;
+				audioSource.Play();
+			}
 		}
+	}
+
+	public void ChangeVolume(float volume) {
+			audioSource.volume = volume;
 	}
 }
