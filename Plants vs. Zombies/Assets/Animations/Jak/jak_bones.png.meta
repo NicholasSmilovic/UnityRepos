@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 53e70f42a33d0fb408b0bdb68b6a9d26
-timeCreated: 1523755297
+timeCreated: 1523805944
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,7 @@ TextureImporter:
     21300002: jak_left_leg
     21300004: jak_right_leg
     21300006: jak_jaw
+    21300008: jak_left_arm
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -44,7 +45,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 800
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -85,12 +86,12 @@ TextureImporter:
       name: jak_upper_body
       rect:
         serializedVersion: 2
-        x: 146
-        y: 390
-        width: 617
-        height: 505
+        x: 361
+        y: 386
+        width: 402
+        height: 509
       alignment: 9
-      pivot: {x: 0.50166917, y: 0.12680107}
+      pivot: {x: 0.21730322, y: 0.03575209}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -129,7 +130,20 @@ TextureImporter:
         width: 76
         height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jak_left_arm
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 392
+        width: 318
+        height: 227
+      alignment: 9
+      pivot: {x: 0.92749166, y: 0.8674854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
